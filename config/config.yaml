@@ -1,0 +1,7 @@
+artifacts_root: artifacts
+
+data_ingestion:
+  root_dir : artifacts/data_ingestion
+  source_URL: https://github.com/akash-sardar/datasets/raw/396131e6296d74426146965dd66c3e0462bd5158/banking77/banking77.zip
+  local_data_file: artifacts/data_ingestion/data.zip
+  unzip_dir: artifacts/data_ingestion
