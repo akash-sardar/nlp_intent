@@ -4,6 +4,7 @@ import urllib.request as request
 import zipfile
 from intent.logging import logger
 from intent.utils.common import get_size
+from intent.config.configuration import *
 
 class DataIngestion:
     def __init__(self, config:DataIngestionConfig):
