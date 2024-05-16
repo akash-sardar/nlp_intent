@@ -32,7 +32,7 @@ list_of_files = [
     "Dockerfile",
     "requirements.txt",
     "setup.py",
-    ".gitignore"
+    ".gitignore",
     "research/trials.ipynb"
 ]
 
