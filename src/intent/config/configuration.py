@@ -1,6 +1,7 @@
 # Update the configuration manager. This will be moved to config/configurationmanager.py
 from intent.constants import *
 from intent.utils.common import read_yaml, create_directories
+from intent.entity import *
 
 class ConfigurationManager:
     def __init__(self, config_filepath = CONFIG_FILE_PATH, params_filepath = PARAMS_FILE_PATH) -> None:
