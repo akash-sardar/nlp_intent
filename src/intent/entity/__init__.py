@@ -22,3 +22,17 @@ class DataTransformationConfig:
     data_path: Path
     tokenizer_name: Path
 
+@dataclass(frozen = True)
+class ModelTrainerConfig:
+    root_dir: Path
+    data_path : Path
+    model_ckpt : Path
+    num_train_epochs : int
+    learning_rate : float
+    per_device_train_batch_size : int
+    per_device_eval_batch_size : int
+    weight_decay : float
+    evaluation_strategy : str
+    disable_tqdm : bool
+    logging_steps : int
+    log_level : str   
