@@ -36,3 +36,12 @@ class ModelTrainerConfig:
     disable_tqdm : bool
     logging_steps : int
     log_level : str   
+
+@dataclass(frozen = True)
+class ModelEvaluationConfig:
+    root_dir : Path
+    transformed_data_path : Path
+    data_path : Path
+    model_path : Path
+    tokenizer_path : Path
+    metric_file_name : Path    

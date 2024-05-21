@@ -20,3 +20,11 @@ model_trainer:
   root_dir: artifacts/model_trainer
   data_path : artifacts/data_transformation
   model_ckpt : distilbert-base-uncased
+
+model_evaluation:
+  root_dir : artifacts/model_evaluation
+  transformed_data_path : artifacts/data_transformation
+  data_path : artifacts/data_ingestion
+  model_path : artifacts/model_trainer/distilbert-base-uncased-finetuned-banking77
+  tokenizer_path : artifacts/model_trainer/tokenizer-finetuned-banking77
+  metric_file_name : artifacts/model_evaluation/metrics.csv
