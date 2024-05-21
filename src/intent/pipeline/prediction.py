@@ -6,7 +6,8 @@ from datasets import load_dataset
 
 class PredictionPipeline:
     def __init__(self):
-        config = config.get_model_evaluation_config()
+        config = ConfigurationManager()
+        self.config = config.get_model_evaluation_config()
     
     def predict(self, text):
         try:
